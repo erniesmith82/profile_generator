@@ -1,0 +1,11 @@
+* {
+    border: 1px dashed red
+}
+
+.profile {
+    width: 400px;
+    height: 50vh;
+    margin: auto;
+    
+
+}
