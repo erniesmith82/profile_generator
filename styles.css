@@ -1,7 +1,20 @@
-* {
+/* * {
     border: 1px dashed red
-}
+} */
 
+.container  {
+    margin: auto;
+    width: auto;
+    margin-top: 20px;
+}
+.row{
+    margin: auto;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    gap: 50%;
+}
 .profile {
     width: 400px;
     height: 50vh;
@@ -9,3 +22,4 @@
     
 
 }
+
