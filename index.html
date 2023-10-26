@@ -11,13 +11,16 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                  
+                
+            <div class="image">
                 <span for="bgImage">Generate Background Image:</span>
                 <select id="bgImage" class="form-control">
                     <option selected>Yes</option>
                     <option>No</option>
                 </select>
                 <br>
+            </div>    
+            <div class="personalInfo">
                 <span for="firstName">First Name:</span>
                 <input type="text" class="form-control" id="firstName" placeholder="First Name"><br>
                 <span for="LastName">Last Name:</span>
@@ -27,6 +30,8 @@
                     <option selected>Left</option>
                     <option>Right</option>
                 </select><br>
+            </div>
+            <div class="social">
                 <span>Twitter:</span>
                 <input type="text" class="form-control" id="twitter" placeholder="Twitter"><br>
                 <span>Github:</span>
@@ -37,8 +42,10 @@
                 <input type="text" class="form-control" id="instagram" placeholder="Instagram"><br>
                 <span>Role:</span>
                 <input type="text" class="form-control" id="role" placeholder="Role"><br>
+            </div>
+            <div class="location">
                 <span>City:</span>
-                <input type="text" class="form-control" id="firstName" placeholder="First Name"><br>
+                <input type="text" class="form-control" id="city placeholder="City"><br>
                 <span>Country:</span>
                 <select id="smPosition" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
@@ -286,7 +293,7 @@
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
-
+            </div>
                 <div class="button">
                     <button class="submit" onclick="openNav()">Submit</button>  
                 </div>
