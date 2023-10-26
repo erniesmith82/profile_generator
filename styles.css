@@ -1,16 +1,29 @@
-/* * {
+* {
     border: 1px dashed red
-} */
+}
 
 
 span {
     color: white;
 }
 .profile {
-    width: 400px;
-    height: 50vh;
+    width: 35%;
+    height: 60vh;
     margin: auto;
-    
+   
+}
+
+.bGround {
+  width: 100%;
+  height: 35vh;
+  margin: auto;
+}
+
+.profileImage {
+  width: 65%;
+  height: 45vh;
+  margin: auto;
+  margin-top: 20%;
 
 }
 
