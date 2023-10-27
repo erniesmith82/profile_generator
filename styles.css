@@ -1,13 +1,17 @@
-/* * {
+* {
     border: 1px dashed red
-} */
+}
 
+html {
+  background: linear-gradient(to bottom, black, gray);
+  height: 100vh;
+}
 
 span {
     color: white;
 }
 .profile {
-    width: 35%;
+    width: 45%;
     height: 60vh;
     margin: auto;
    
@@ -17,24 +21,27 @@ span {
   width: 100%;
   height: 35vh;
   margin: auto;
+  
 }
 
 #backImage {
-  width: 35vw;
+  width: 45vw;
   height: 59vh;
-  margin: auto;
-}
+  margin: 0;
+ }
 
 .profileImage {
-  width: 50%;
+  width: 40%;
   height: 45vh;
   margin: auto;
-  margin-top: -30%;
+  margin-top: -35%;
 
 }
 
 #profilePic2 {
   width: 100%;
+  border: 5px solid white;
+  border-radius: 50px;
 }
 
 h1 {
@@ -55,17 +62,20 @@ h1 {
   
   
 }
-.icons {
+#icons {
   background-color: rgb(158, 185, 185);
-  width: 10%;
-  height: auto;
-  position: relative;
+  width: 11%;
+  height: 15vh;
+  display: flex;
   float: right;
   font-size: 2em;
   filter: invert(0.30);
-  margin-top: -80%;
-  
+  margin-top: -150%;
 }
+.list {
+  margin: auto;
+}
+
 .sidebar {
     height: 100%;
     width: 0;

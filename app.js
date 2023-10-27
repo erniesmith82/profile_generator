@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       let role = document.getElementById('role1').value;
       let cityText = document.getElementById('city').value;
       let country1 = document.getElementById('country').value;
+    //   let socialVisible = document.getElementById('socialVisible');
+    //   let content = document.getElementById('icons');
 
       
       if (bgPic === 'Yes') {
@@ -28,6 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
           reader.readAsDataURL(picture);
       }
 
+    //   if (socialVisible.value === 'yes') {
+    //     content.style.display = 'block';
+    //     content.style.backgroundColor = 'rgb(158, 185, 185)';
+    //     content.style.width = '10%';
+    //     content.style.height = 'auto';
+    //     content.style.position = 'relative';
+    //     content.style.float = 'right';
+    //     content.style.fontSize = '2em';
+    //     content.style.filter = 'invert(0.30)';
+    //     content.style.marginTop = '-50%';
+    // } else {
+    //     content.style.display = 'none';
+    // }
       
       document.getElementById('fname').textContent = fstName;
       document.getElementById('lname').textContent = lstName;

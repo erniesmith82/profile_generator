@@ -17,8 +17,8 @@
             <div class="image">
                 <span for="bgImage">Generate Background Image:</span>
                 <select id="bgImage" class="form-control">
-                    <option selected>Yes</option>
-                    <option>No</option>
+                    <option selected>No</option>
+                    <option>Yes</option>
                 </select>
                 <br>
                 <span for="profilePic">Upload Profile Image</span>
@@ -282,6 +282,11 @@
                 </select>
             </div>
             <div class="social">
+                <span for="socialVisible">S.M. Icons:</span>
+                <select id="socialVisible" class="form-control">
+                    <option selected>No</option>
+                    <option>Yes</option>
+                </select><br>
                 <span for="smPosition">S.M. Position:</span>
                 <select id="smPosition" class="form-control">
                     <option selected>Left</option>
@@ -324,18 +329,18 @@
                     <h2 id="role2"></h2>
                     <h3 id="city2"></h3> <h3 id="country2"></h3>
                 </div>
-                    
-            </div>
-            <div class="icons">
-                
-                  <a href=""><i class="fa fa-twitter"></i></a></li>
-                  <a href=""><i class="fa fa-github"></i></a></li>
-                  <a href=""><i class="fa fa-linkedin"></i></a></li>
-                  <a href=""><i class="fa fa-instagram"></i></a></li>
-                
+                     <div id="icons" class="hidden">
+                <div class="list">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-github"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                </div>
             
               </div>
         </div>
+            </div>
+           
         
     </div>
 </body>
