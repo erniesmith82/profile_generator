@@ -29,29 +29,12 @@
                 <input type="text" class="form-control" id="firstName" placeholder="First Name"><br>
                 <span for="LastName">Last Name:</span>
                 <input type="text" class="form-control" id="lastName" placeholder="Last Name"><br>
-            </div>
-            <div class="social">
-                <span for="smPosition">S.M. Position:</span>
-                <select id="smPosition" class="form-control">
-                    <option selected>Left</option>
-                    <option>Right</option>
-                </select><br>
-                <span>Twitter:</span>
-                <input type="text" class="form-control" id="twitter" placeholder="Twitter"><br>
-                <span>Github:</span>
-                <input type="text" class="form-control" id="github" placeholder="Github"><br>
-                <span>LinkedIn:</span>
-                <input type="text" class="form-control" id="linkedIn" placeholder="LinkedIn"><br>
-                <span>Instagram:</span>
-                <input type="text" class="form-control" id="instagram" placeholder="Instagram"><br>
                 <span>Role:</span>
-                <input type="text" class="form-control" id="role" placeholder="Role"><br>
-            </div>
-            <div class="location">
+                <input type="text" class="form-control" id="role1" placeholder="Role"><br>
                 <span>City:</span>
-                <input type="text" class="form-control" id="city placeholder="City"><br>
+                <input type="text" class="form-control" id="city" placeholder="City"><br>
                 <span>Country:</span>
-                <select id="smPosition" class="form-control">
+                <select id="country" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
                     <option value="Albania">Albania</option>
@@ -298,6 +281,22 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
             </div>
+            <div class="social">
+                <span for="smPosition">S.M. Position:</span>
+                <select id="smPosition" class="form-control">
+                    <option selected>Left</option>
+                    <option>Right</option>
+                </select><br>
+                <span>Twitter:</span>
+                <input type="text" class="form-control" id="twitter" placeholder="Twitter"><br>
+                <span>Github:</span>
+                <input type="text" class="form-control" id="github" placeholder="Github"><br>
+                <span>LinkedIn:</span>
+                <input type="text" class="form-control" id="linkedIn" placeholder="LinkedIn"><br>
+                <span>Instagram:</span>
+                <input type="text" class="form-control" id="instagram" placeholder="Instagram"><br>
+                </div>
+            
         </form>
                 <div class="button">
                     <button type="button" id="submitBtn" class="submit">Submit</button>
@@ -314,25 +313,28 @@
 
     
     
-    <div class="profile">
-        <div class="bGround">
-            <img id="backImage" />
-            <div class="profileImage">
+        <div class="profile">
+            <div class="bGround">
+                 <img id="backImage" />
+                     <div class="profileImage">
                            
                     <img id="profilePic2" class="photo"  />
-                    <h1 id="fname"></h1>
-                    <h2 id="lname"></h2>
+                    <div class="information">
+                    <h1 id="fname"></h1>      <h1 id="lname"></h1>
+                    <h2 id="role2"></h2>
+                    <h3 id="city2"></h3> <h3 id="country2"></h3>
+                </div>
                     
-                    <div class="icons">
-                    <ul class="position-right">
-                      <a href=""><i class="fa fa-twitter"></i></a></li>
-                      <a href=""><i class="fa fa-github"></i></a></li>
-                      <a href=""><i class="fa fa-linkedin"></i></a></li>
-                      <a href=""><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                
-                  </div>
             </div>
+            <div class="icons">
+                
+                  <a href=""><i class="fa fa-twitter"></i></a></li>
+                  <a href=""><i class="fa fa-github"></i></a></li>
+                  <a href=""><i class="fa fa-linkedin"></i></a></li>
+                  <a href=""><i class="fa fa-instagram"></i></a></li>
+                
+            
+              </div>
         </div>
         
     </div>

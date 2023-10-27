@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Event listener for the submit button
+  
   document.getElementById('submitBtn').addEventListener('click', function() {
-      // Get the values from the input fields
+      
       let bgPic = document.getElementById('bgImage').value;
       let picture = document.getElementById('profilePic').files[0];
       let fstName = document.getElementById('firstName').value;
       let lstName = document.getElementById('lastName').value;
+      let role = document.getElementById('role1').value;
+      let cityText = document.getElementById('city').value;
+      let country1 = document.getElementById('country').value;
 
       
       if (bgPic === 'Yes') {
@@ -28,6 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
       document.getElementById('fname').textContent = fstName;
       document.getElementById('lname').textContent = lstName;
+      document.getElementById('role2').textContent = role;
+      document.getElementById('city2').textContent = cityText;
+      document.getElementById('country2').textContent = country1;
 
      
       closeNav();

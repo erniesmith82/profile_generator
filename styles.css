@@ -30,30 +30,41 @@ span {
   height: 45vh;
   margin: auto;
   margin-top: -30%;
-  border:2px solid #444;
 
 }
 
+#profilePic2 {
+  width: 100%;
+}
 
+h1 {
+  display: inline;
+  
+}
+.information {
+  text-align: center;
+}
 .button {
     position: absolute;
     bottom: 10%;
     right: 10%;
 }
-.social, .location, .personalInfo, .image{
+.social, .personalInfo, .image{
   padding-top: 10%;
   padding-left: 5%;
   
   
 }
 .icons {
-  background-color: grey;
-  width: 15%;
+  background-color: rgb(158, 185, 185);
+  width: 10%;
+  height: auto;
   position: relative;
   float: right;
   font-size: 2em;
   filter: invert(0.30);
-  justify-content: center;
+  margin-top: -80%;
+  
 }
 .sidebar {
     height: 100%;
@@ -119,7 +130,6 @@ span {
     padding: 16px;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
