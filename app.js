@@ -1,35 +1,40 @@
-document.getElementById('submitBtn').addEventListener('click', function() {
-  let bgPic = document.getElementById('bgImage').value;
-  let picture = document.getElementById('profilePic').files[0];
-  let fstName = document.getElementById('firstName').value;
-  let lstName = document.getElementById('lastName').value;
+document.addEventListener('DOMContentLoaded', function() {
+  // Event listener for the submit button
+  document.getElementById('submitBtn').addEventListener('click', function() {
+      // Get the values from the input fields
+      let bgPic = document.getElementById('bgImage').value;
+      let picture = document.getElementById('profilePic').files[0];
+      let fstName = document.getElementById('firstName').value;
+      let lstName = document.getElementById('lastName').value;
 
-  
-  if (bgPic === 'Yes') {
-    let randomImage = "https://source.unsplash.com/random";
-    document.getElementById('backImage').src = randomImage;
-  } else if (bgPic === 'No') {
-    let noImageURL = "null"; 
-    document.getElementById('backImage').src = noImageURL;
-  
-  }
+      
+      if (bgPic === 'Yes') {
+          let randomImage = "https://source.unsplash.com/random";
+          document.getElementById('backImage').src = randomImage;
+      } else if (bgPic === 'No') {
+          let noImageURL = 'null';
+          document.getElementById('backImage').src = noImageURL;
+      }
 
-  
-  if (picture) {
-    let reader = new FileReader();
-    reader.onload = function(event) {
-      document.getElementById('profilePic2').src = event.target.result;
-    };
-    reader.readAsDataURL(picture);
-  }
+      
+      if (picture) {
+          let reader = new FileReader();
+          reader.onload = function(event) {
+              document.getElementById('profilePic2').src = event.target.result;
+          };
+          reader.readAsDataURL(picture);
+      }
 
-  
-  document.getElementById('fname').textContent = fstName;
-  document.getElementById('lname').textContent = lstName;
+      
+      document.getElementById('fname').textContent = fstName;
+      document.getElementById('lname').textContent = lstName;
+
+     
+      closeNav();
+  });
+
+ 
 });
-
-
-
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "500px";
