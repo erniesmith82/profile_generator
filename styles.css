@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px dashed red
-}
+} */
 
 
 span {
@@ -19,13 +19,21 @@ span {
   margin: auto;
 }
 
+#backImage {
+  width: 35vw;
+  height: 59vh;
+  margin: auto;
+}
+
 .profileImage {
-  width: 65%;
+  width: 50%;
   height: 45vh;
   margin: auto;
-  margin-top: 20%;
+  margin-top: -30%;
+  border:2px solid #444;
 
 }
+
 
 .button {
     position: absolute;
@@ -37,6 +45,15 @@ span {
   padding-left: 5%;
   
   
+}
+.icons {
+  background-color: grey;
+  width: 15%;
+  position: relative;
+  float: right;
+  font-size: 2em;
+  filter: invert(0.30);
+  justify-content: center;
 }
 .sidebar {
     height: 100%;

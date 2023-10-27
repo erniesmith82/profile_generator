@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="app.js"></script> 
     <title>Profile Generator</title>
 </head>
 <body>
+    <form>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 
@@ -19,19 +21,21 @@
                     <option>No</option>
                 </select>
                 <br>
+                <span for="profilePic">Upload Profile Image</span>
+                <input type="file" accept="image/png, image/jpeg" id="profilePic">
             </div>    
             <div class="personalInfo">
                 <span for="firstName">First Name:</span>
                 <input type="text" class="form-control" id="firstName" placeholder="First Name"><br>
                 <span for="LastName">Last Name:</span>
                 <input type="text" class="form-control" id="lastName" placeholder="Last Name"><br>
+            </div>
+            <div class="social">
                 <span for="smPosition">S.M. Position:</span>
                 <select id="smPosition" class="form-control">
                     <option selected>Left</option>
                     <option>Right</option>
                 </select><br>
-            </div>
-            <div class="social">
                 <span>Twitter:</span>
                 <input type="text" class="form-control" id="twitter" placeholder="Twitter"><br>
                 <span>Github:</span>
@@ -294,8 +298,9 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
             </div>
+        </form>
                 <div class="button">
-                    <button class="submit" onclick="openNav()">Submit</button>  
+                    <button id="submitBtn" class="submit" onclick="openNav()">Submit</button>  
                 </div>
                 
         
@@ -311,8 +316,22 @@
     
     <div class="profile">
         <div class="bGround">
+            <img id="backImage" />
             <div class="profileImage">
+                           
+                    <img id="profilePic2" class="photo"  />
+                    <h1 id="fname"></h1>
+                    <h2 id="lname"></h2>
+                    
+                    <div class="icons">
+                    <ul class="position-right">
+                      <a href=""><i class="fa fa-twitter"></i></a></li>
+                      <a href=""><i class="fa fa-github"></i></a></li>
+                      <a href=""><i class="fa fa-linkedin"></i></a></li>
+                      <a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                 
+                  </div>
             </div>
         </div>
         
