@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   
-  document.getElementById('submitBtn').addEventListener('click', function() {
-      
+  document.getElementById('submitBtn').addEventListener('click', function(e) {
+      e.preventDefault()
       let bgPic = document.getElementById('bgImage').value;
       let picture = document.getElementById('profilePic').files[0];
       let fstName = document.getElementById('firstName').value;
@@ -9,8 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
       let role = document.getElementById('role1').value;
       let cityText = document.getElementById('city').value;
       let country1 = document.getElementById('country').value;
-    //   let socialVisible = document.getElementById('socialVisible');
-    //   let content = document.getElementById('icons');
+      let leftRight = document.getElementById('smPosition');
+      let result = document.getElementById('twitter').value;
+      let result2 = document.getElementById('github').value;
+      let result3 = document.getElementById('linkedIn').value;
+      let result4 = document.getElementById('instagram').value;
 
       
       if (bgPic === 'Yes') {
@@ -30,26 +33,38 @@ document.addEventListener('DOMContentLoaded', function() {
           reader.readAsDataURL(picture);
       }
 
-    //   if (socialVisible.value === 'yes') {
-    //     content.style.display = 'block';
-    //     content.style.backgroundColor = 'rgb(158, 185, 185)';
-    //     content.style.width = '10%';
-    //     content.style.height = 'auto';
-    //     content.style.position = 'relative';
-    //     content.style.float = 'right';
-    //     content.style.fontSize = '2em';
-    //     content.style.filter = 'invert(0.30)';
-    //     content.style.marginTop = '-50%';
-    // } else {
-    //     content.style.display = 'none';
-    // }
+    
+
+    if (leftRight.value === 'Left') {
+      icons.style.float = 'left';
+      icons.style.display = 'flex';
+      icons.style.backgroundColor = 'rgb(158, 185, 185)';
+      icons.style.fontSize = '2em';
+      icons.style.marginLeft = '23%';
+      icons.style.width = '2.5%';
+      icons.style.height = '23vh';
+      
+      
+  } else {
+    icons.style.float = 'right';
+      icons.style.display = 'flex';
+      icons.style.backgroundColor = 'rgb(158, 185, 185)';
+      icons.style.fontSize = '2em';
+      icons.style.marginRight = '24%';
+      icons.style.width = '2.5%';
+      icons.style.height = '23vh';
+  }
       
       document.getElementById('fname').textContent = fstName;
       document.getElementById('lname').textContent = lstName;
       document.getElementById('role2').textContent = role;
       document.getElementById('city2').textContent = cityText;
       document.getElementById('country2').textContent = country1;
-
+      document.getElementById('twitter1').href = result;
+      document.getElementById('github1').href = result;
+      document.getElementById('linkedin1').href = result;
+      document.getElementById('instagram1').href = result;
+      
      
       closeNav();
   });

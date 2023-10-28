@@ -1,9 +1,9 @@
-* {
+/* * {
     border: 1px dashed red
-}
+} */
 
 html {
-  background: linear-gradient(to bottom, black, gray);
+  background: linear-gradient(to bottom, black, rgb(223, 217, 217));
   height: 100vh;
 }
 
@@ -21,26 +21,30 @@ span {
   width: 100%;
   height: 35vh;
   margin: auto;
+  margin-top: 2%;
   
 }
 
 #backImage {
-  width: 45vw;
-  height: 59vh;
+  width: 43.5vw;
+  height: 65vh;
   margin: 0;
+  border: none;
+  margin-top: -40%;
  }
 
 .profileImage {
-  width: 40%;
-  height: 45vh;
+  width: 50%;
+  height: 59vh;
   margin: auto;
-  margin-top: -35%;
+  margin-top: -32%;
+
 
 }
 
 #profilePic2 {
   width: 100%;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   border-radius: 50px;
 }
 
@@ -50,6 +54,8 @@ h1 {
 }
 .information {
   text-align: center;
+  font-style: italic;
+  
 }
 .button {
     position: absolute;
@@ -62,18 +68,10 @@ h1 {
   
   
 }
-#icons {
-  background-color: rgb(158, 185, 185);
-  width: 11%;
-  height: 15vh;
-  display: flex;
-  float: right;
-  font-size: 2em;
-  filter: invert(0.30);
-  margin-top: -150%;
-}
+
 .list {
   margin: auto;
+  
 }
 
 .sidebar {
@@ -86,8 +84,8 @@ h1 {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 4%;
-    font-size: 2em;
+    padding-top: 1%;
+    font-size: 30px;
     
   }
   
