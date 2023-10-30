@@ -3,7 +3,7 @@
 } */
 
 html {
-  background: linear-gradient(to bottom, black, rgb(223, 217, 217));
+  background: linear-gradient(to bottom, rgb(43, 35, 35), rgb(250, 248, 248));
   height: 100vh;
 }
 
@@ -12,8 +12,9 @@ span {
 }
 .profile {
     width: 45%;
-    height: 60vh;
+    height: auto;
     margin: auto;
+    justify-content: center;
    
 }
 
@@ -21,30 +22,32 @@ span {
   width: 100%;
   height: 35vh;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 25%;
+  box-sizing: content-box;
   
 }
 
 #backImage {
   width: 43.5vw;
   height: 65vh;
-  margin: 0;
+  margin: auto;
   border: none;
-  margin-top: -40%;
+  bottom: 95%;
+  box-sizing: content-box;
+  position: relative;
  }
 
 .profileImage {
   width: 50%;
   height: 59vh;
   margin: auto;
-  margin-top: -32%;
-
+  margin-top: -69%;
+  position: relative;
 
 }
 
 #profilePic2 {
   width: 100%;
-  /* border: 5px solid white; */
   border-radius: 50px;
 }
 
@@ -65,12 +68,6 @@ h1 {
 .social, .personalInfo, .image{
   padding-top: 10%;
   padding-left: 5%;
-  
-  
-}
-
-.list {
-  margin: auto;
   
 }
 
