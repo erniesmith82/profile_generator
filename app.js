@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       let bgPic = document.getElementById('bgImage').value;
       let picture = document.getElementById('profilePic').files[0];
+      let bgTag = document.getElementById('bgImageTag').value;
       let fstName = document.getElementById('firstName').value;
       let lstName = document.getElementById('lastName').value;
       let role = document.getElementById('role1').value;
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Background image
       if (bgPic === 'Yes') {
-          let randomImage = "https://source.unsplash.com/random/?coding";
+        let randomImage = `https://source.unsplash.com/random/?${bgTag}`;
           backImage.src = randomImage;
           backImage.style.display = 'flex';
       } else {
@@ -70,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('instagram1').href = `https://instagram.com/${result4}`;
 
       closeNav();
+
+      
   });
 });
 
