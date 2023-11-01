@@ -140,7 +140,7 @@ h1 {
     .sidebar a {font-size: 18px;}
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .sidebar  {
       width: 80%; 
       left: 0; 
