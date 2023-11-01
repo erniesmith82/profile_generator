@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
       if (leftRight.value === 'Left') {
           icons.style.float = 'left';
           icons.style.display = 'flex';
-          icons.style.backgroundColor = 'rgb(158, 185, 185)';
           icons.style.fontSize = '2em';
           icons.style.marginLeft = '21%';
           icons.style.width = '2%';
@@ -53,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
           icons.style.float = 'right';
           icons.style.display = 'flex';
-          icons.style.backgroundColor = 'rgb(158, 185, 185)';
           icons.style.fontSize = '2em';
           icons.style.marginRight = '24%';
           icons.style.width = '2%';
