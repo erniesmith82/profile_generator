@@ -39,7 +39,7 @@ span {
 
 .profileImage {
   width: 50%;
-  height: 59vh;
+  height: 30%;
   margin: auto;
   margin-top: -69%;
   position: relative;
@@ -81,7 +81,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 1%;
+    padding-top: 3%;
     font-size: 30px;
     
   }
@@ -138,4 +138,29 @@ h1 {
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 480px) {
+    .sidebar  {
+      width: 80%; 
+      left: 0; 
+      font-size: 23px;
+      
+    }
+    .openbtn {
+      position: fixed; 
+    }
+
+    input {
+      width: 25%;
+    }
+    #country {
+      width: 50%;
+    }
+    .button {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
   }
