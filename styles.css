@@ -185,8 +185,7 @@ h1 {
      .list {
       position: fixed;
       bottom: 25px;
-      z-index: 999; 
-      display: flex;
+      font-size: 28px;      
       margin-left: -45px;
     }
     
